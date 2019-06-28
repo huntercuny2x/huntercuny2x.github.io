@@ -245,7 +245,7 @@
           padding-left: 10px; }
     #page.ttp .middle-section .class-container {
       background-color: #562282;
-      height: 1200px;
+      height: auto;
       color: #fff;
       width: 50%; }
       #page.ttp .middle-section .class-container .class-title {
@@ -613,6 +613,7 @@
     width: initial;
     padding: 0 0 20px 0; } }
 
-    code { background-color: #ffffff; }
+    code { background-color: #00FFFF; color:black;}
+
 
 /*# sourceMappingURL=ttp-lander.css.map */
