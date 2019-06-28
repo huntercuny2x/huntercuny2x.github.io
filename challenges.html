@@ -185,7 +185,7 @@ Output: false</code></br>
 
 <code>Input: "{[]}"</br>
 Output: true</code></br>
-Submission: Submit a single-file implementation of a class named Solution with public member function: <i>bool isValid(std::string s)</i> You may have additional helper functions if you like, <b>isValid is required.</b>
+Submission: Submit a single-file implementation of a class named Solution with public member function: <code>bool isValid(std::string s)</code> You may have additional helper functions if you like, <b>isValid is required.</b>
            
           </a>
 
@@ -213,20 +213,20 @@ Submission: Submit a single-file implementation of a class named Solution with p
           <p>Difficulty Level: Easy</p>
 
 
-Check out https://www.hackerrank.com/topics/bubble-sort to learn more about bubble sort. The video tutorial is by Gayle Laakmann McDowell, author of the best-selling interview book Cracking the Coding Interview. Also on wikipedia: https://www.hackerrank.com/topics/bubble-sort
+Check out <a href="https://www.hackerrank.com/topics/bubble-sort" target="_blank">https://www.hackerrank.com/topics/bubble-sort</a> to learn more about bubble sort. The video tutorial is by Gayle Laakmann McDowell, author of the best-selling interview book <a target="_blank" href="https://www.amazon.com/gp/product/0984782850/ref=as_li_tl?ie=UTF8&tag=hrctci-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0984782850&linkId=4b0bb75d87b94d4378dd3bd245a7284b">Cracking the Coding Interview</a>. Also on wikipedia: <a href="https://www.hackerrank.com/topics/bubble-sort" target="_blank">https://www.hackerrank.com/topics/bubble-sort</a>
 
 Consider the following version of Bubble Sort:
 
+<code>
 for (int i = 0; i < n; i++) {
-
     for (int j = 0; j < n - 1; j++) {
         // Swap adjacent elements if they are in decreasing order
         if (a[j] > a[j + 1]) {
             swap(a[j], a[j + 1]);
         }
     }
-
 }
+</code>
 Given an array of integers, sort the array in ascending order using the Bubble Sort algorithm above. Once sorted, print the following three lines:
 
 Array is sorted in numSwaps swaps., where numSwaps is the number of swaps that took place.
