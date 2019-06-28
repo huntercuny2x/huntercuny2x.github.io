@@ -165,14 +165,14 @@
   #page.ttp .middle-section {
     height: auto;
     width: 100vw;
-    padding-bottom: 20px;
+    padding-bottom: -40px;
     margin: 0 auto; }
     #page.ttp .middle-section .sponsor-container {
       max-width: 960px;
       margin: 0 auto;
       background-color: #fff;
       color: #828282;
-      padding: 36px 0;
+      padding: 0;
       font-size: 40px;
       font-weight: 300;
       text-align: center; }
