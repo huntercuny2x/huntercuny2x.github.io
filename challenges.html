@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+  <title>Coding Challenges Page</title>
+  
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.6.3 - https://yoast.com/wordpress/plugins/seo/ -->
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Tech Talent Pipeline Residency @ Hunter College" />
+<meta property="og:url" content="https://huntercuny2x.github.io" />
+<meta property="og:site_name" content="Hunter CUNY 2x" />
+
+<link href="./font-awesome.css" type="text/css" rel="stylesheet" />
+  <link href="./landing-footer.css" type="text/css" rel="stylesheet" />
+  <link href="./ttp-lander.css" type="text/css" rel="stylesheet" />
+  <link href="./hunter.css" type="text/css" rel="stylesheet" />
+<link rel='stylesheet' id='pronamic-pay-forms-css'  href='../wp-content/plugins/pronamic-ideal/css/forms.min.css@ver=3.7.0.css' type='text/css' media='all' />
+
+<meta http-equiv="Content-Security-Policy" content="img-src 'self' style-src 'self' 'unsafe-inline' default-src 'self' img-src 'self' font-src 'self' data: fonts.gstatic.com;">
+
+<script type="text/javascript">
+var a2a_config=a2a_config||{},wpa2a={done:false,html_done:false,script_ready:false,script_load:function(){var a=document.createElement('script'),s=document.getElementsByTagName('script')[0];a.type='text/javascript';a.async=true;a.src='http://static.addtoany.com/menu/page.js';s.parentNode.insertBefore(a,s);wpa2a.script_load=function(){};},script_onready:function(){if(a2a.type=='page'){wpa2a.script_ready=true;if(wpa2a.html_done)wpa2a.init();}},init:function(){for(var i=0,el,target,targets=wpa2a.targets,length=targets.length;i<length;i++){el=document.getElementById('wpa2a_'+(i+1));target=targets[i];a2a_config.linkname=target.title;a2a_config.linkurl=target.url;if(el){a2a.init('page',{target:el});el.id='';}wpa2a.done=true;}wpa2a.targets=[];}};a2a_config.callbacks=a2a_config.callbacks||[];a2a_config.callbacks.push({ready:wpa2a.script_onready});
+
+</script>
+<meta name="EnlighterJS" content="Advanced javascript based syntax highlighting" data-language="ruby" data-theme="mocha" data-indent="-1" data-hover="hoverEnabled" data-selector-block="pre.EnlighterJSRAW" data-selector-inline="code.EnlighterJSRAW" data-linenumbers="true" data-rawcodebutton="true" />
+
+  <link rel="shortcut icon" type="image/x-icon"
+          href="http://www.hunter.cuny.edu/favicon.ico" />
+
+  <!-- Google Tag Manager
+<noscript><iframe src="http://www.googletagmanager.com/ns.html?id=GTM-PK6XBX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PK6XBX');</script> -->
+<!-- End Google Tag Manager -->
+</head>
+<body>
+  <div id="page" class="ttp">
+    <div class="top-section">
+      <div class="bg-image-lander"></div>
+      <div class="clear"></div>
+      <div class="wrapper-text">
+        <div class="centered">
+          <div class="top-title">
+            <h1>TTP Residency @ Hunter College Coding Challenges</h1>
+           
+            <div class="clear"></div>
+            <a href="http://www.hunter.cuny.edu/main/" target="_blank">
+              <img class="logo-alt" src="./images/hunterlogo.png" onerror="this.onerror=null; this.src='./logo-white.png'" />
+            </a>
+            <a href="http://www2.cuny.edu/" target="_blank">
+              <img class="logo-alt" src="./CUNY-logo.png" onerror="this.onerror=null; this.src='./logo-white.png'" />
+            </a>
+            <a href="http://www.techtalentpipeline.nyc/" target="_blank">
+              <img class="logo-alt" src="./ttp_white.png" onerror="this.onerror=null; this.src='./logo-white.png'" />
+            </a>
+            
+           
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="middle-section">
+      <div class="contest-container left">
+        <div class="contest-body">
+          <br />
+          <br />
+          <br />
+          <div class="contest-text">
+           <p>01.E Implementing Queue using Stacks</p>
+   
+          <p>Difficulty Level: Easy</p>
+<p>Implement the following operations of a queue using stacks.</p>
+
+<p>push(x) -- Push element x to the back of queue (you may assume x is an int).</p>
+<p>pop() -- Removes the element from in front of queue and returns it.</p>
+<p>peek() -- Get the front element without removing it from the queue.</p>
+<p>size() -- Return the number of elements in the queue.</p>
+<p>empty() -- Return whether the queue is empty.</p>
+<p>
+Example:</p>
+
+<code>
+    MyQueue queue = new MyQueue();</br>
+    queue.push(1);</br>
+    queue.push(2);</br>  
+    queue.size();  // returns 2</br>
+    queue.peek();  // returns 1</br>
+    queue.pop();   // returns 1</br>
+    queue.empty(); // returns false</br>
+  </code>
+    </br>
+
+
+<p>Notes:
+
+You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
+You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
+You may assume the queue stores integers.</p>
+</br>
+Submission:
+
+Submit a single file, your class should be implemented within its definition:</br>
+
+<code>
+class MyQueue { public: /** Initialize your data structure here. */</br> MyQueue() {</br>
+
+}</br>
+
+/** Push element x to the back of queue. */</br>
+void push(int x) {</br>
+
+}</br>
+
+/** Removes the element from in front of queue and returns that element. */</br>
+int pop() {</br>
+
+}</br>
+
+/** Get the front element. */</br>
+int peek() {</br>
+
+}</br>
+
+/** Returns whether the queue is empty. */</br>
+bool empty() {</br>
+</br>
+}</br>
+};</br>
+
+</code>
+</p>
+        </div>
+      </div>
+    </div>
+      <div class="class-container left">
+       
+        <div class="class-text">
+          <p>02.E Valid Parentheses</p>
+            Difficulty Level: Easy
+
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Note that an empty string is also considered valid.
+
+Example 1:
+
+Input: "()"
+Output: true
+Example 2:
+
+Input: "()[]{}"
+Output: true
+Example 3:
+
+Input: "(]"
+Output: false
+Example 4:
+
+Input: "([)]"
+Output: false
+Example 5:
+
+Input: "{[]}"
+Output: true
+Submission: Submit a single-file implementation of a class named Solution with public member function: bool isValid(std::string s) You may have additional helper functions if you like, isValid is required.
+           
+          </a>
+
+          <a href="http://bit.ly/cuny2xcontactinfo" target="_blank">
+            
+         </a>
+
+         <a href="https://cunyhunter.co1.qualtrics.com/jfe/form/SV_bNlA08EDYSsn03z" target="_blank">
+            <div class="enroll-now">
+              Hunter student application
+            </div>
+         </a>
+        </div>
+        <div class="clear"></div>
+        blah blah blah
+      </div>
+
+      <div class="contest-container left">
+        <div class="contest-body">
+          <br />
+          <br />
+          <br />
+          <div class="contest-text">
+           <p>01.E Implementing Queue using Stacks
+          Difficulty Level: Easy
+
+Implement the following operations of a queue using stacks.
+
+push(x) -- Push element x to the back of queue (you may assume x is an int).
+pop() -- Removes the element from in front of queue and returns it.
+peek() -- Get the front element without removing it from the queue.
+size() -- Return the number of elements in the queue.
+empty() -- Return whether the queue is empty.
+Example:
+
+    MyQueue queue = new MyQueue();
+
+    queue.push(1);
+    queue.push(2);  
+    queue.size();  // returns 2
+    queue.peek();  // returns 1
+    queue.pop();   // returns 1
+    queue.empty(); // returns false
+Notes:
+
+You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
+You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
+You may assume the queue stores integers.
+Submission:
+
+Submit a single file, your class should be implemented within its definition:
+
+class MyQueue { public: /** Initialize your data structure here. */ MyQueue() {
+
+}
+
+/** Push element x to the back of queue. */
+void push(int x) {
+
+}
+
+/** Removes the element from in front of queue and returns that element. */
+int pop() {
+
+}
+
+/** Get the front element. */
+int peek() {
+
+}
+
+/** Returns whether the queue is empty. */
+bool empty() {
+
+}
+};</p>
+        </div>
+      </div>
+    </div>
+      <div class="class-container left">
+       
+        <div class="class-text">
+          <p>02.E Valid Parentheses</p>
+            Difficulty Level: Easy
+
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Note that an empty string is also considered valid.
+
+Example 1:
+
+Input: "()"
+Output: true
+Example 2:
+
+Input: "()[]{}"
+Output: true
+Example 3:
+
+Input: "(]"
+Output: false
+Example 4:
+
+Input: "([)]"
+Output: false
+Example 5:
+
+Input: "{[]}"
+Output: true
+Submission: Submit a single-file implementation of a class named Solution with public member function: bool isValid(std::string s) You may have additional helper functions if you like, isValid is required.
+           
+          </a>
+
+          <a href="http://bit.ly/cuny2xcontactinfo" target="_blank">
+            
+         </a>
+
+         <a href="https://cunyhunter.co1.qualtrics.com/jfe/form/SV_bNlA08EDYSsn03z" target="_blank">
+            <div class="enroll-now">
+              Hunter student application
+            </div>
+         </a>
+        </div>
+        <div class="clear"></div>
+        blah blah blah
+      </div>
+
+      <div class="contest-container left">
+        <div class="contest-body">
+          <br />
+          <br />
+          <br />
+          <div class="contest-text">
+           <p>01.E Implementing Queue using Stacks
+          Difficulty Level: Easy
+
+Implement the following operations of a queue using stacks.
+
+push(x) -- Push element x to the back of queue (you may assume x is an int).
+pop() -- Removes the element from in front of queue and returns it.
+peek() -- Get the front element without removing it from the queue.
+size() -- Return the number of elements in the queue.
+empty() -- Return whether the queue is empty.
+Example:
+
+    MyQueue queue = new MyQueue();
+
+    queue.push(1);
+    queue.push(2);  
+    queue.size();  // returns 2
+    queue.peek();  // returns 1
+    queue.pop();   // returns 1
+    queue.empty(); // returns false
+Notes:
+
+You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
+You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
+You may assume the queue stores integers.
+Submission:
+
+Submit a single file, your class should be implemented within its definition:
+
+class MyQueue { public: /** Initialize your data structure here. */ MyQueue() {
+
+}
+
+/** Push element x to the back of queue. */
+void push(int x) {
+
+}
+
+/** Removes the element from in front of queue and returns that element. */
+int pop() {
+
+}
+
+/** Get the front element. */
+int peek() {
+
+}
+
+/** Returns whether the queue is empty. */
+bool empty() {
+
+}
+};</p>
+        </div>
+      </div>
+    </div>
+      <div class="class-container left">
+       
+        <div class="class-text">
+          <p>02.E Valid Parentheses</p>
+            Difficulty Level: Easy
+
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Note that an empty string is also considered valid.
+
+Example 1:
+
+Input: "()"
+Output: true
+Example 2:
+
+Input: "()[]{}"
+Output: true
+Example 3:
+
+Input: "(]"
+Output: false
+Example 4:
+
+Input: "([)]"
+Output: false
+Example 5:
+
+Input: "{[]}"
+Output: true
+Submission: Submit a single-file implementation of a class named Solution with public member function: bool isValid(std::string s) You may have additional helper functions if you like, isValid is required.
+           
+          </a>
+
+          <a href="http://bit.ly/cuny2xcontactinfo" target="_blank">
+            
+         </a>
+
+         <a href="https://cunyhunter.co1.qualtrics.com/jfe/form/SV_bNlA08EDYSsn03z" target="_blank">
+            <div class="enroll-now">
+              Hunter student application
+            </div>
+         </a>
+        </div>
+        <div class="clear"></div>
+        blah blah blah
+      </div>
+
+
+      <div class="clear"></div>
+      <div class="about-us-container left">
+        <div class="about-text right">
+          blah blah
+          
+        </div>
+      </div>
+      <div class="about-us left desktop"></div>
+      <div class="about-us left mobile"></div>
+      <div class="clear">
+        
+
+      </div>
+    </div>
+    <div class="clear">
+      
+
+    </div>
+    <div class="footer wrapper">
+      <div class="footer-location">
+        email: 
+        <a style="color: #562282" href="mailto:eh1782@hunter.cuny.edu">eh1782@hunter.cuny.edu </a>
+        <br>Hunter College
+        <br>695 Park Avenue, New York NY 10065
+      </div>
+    </div>
+  </div>
+</body>

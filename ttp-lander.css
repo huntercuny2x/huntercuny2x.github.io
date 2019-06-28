@@ -185,12 +185,12 @@
       #page.ttp .middle-section .sponsor-container .first {
         width: 75px; }
     #page.ttp .middle-section .contest-container {
-      height: 850px;
+      /*height: 850px;*/
       background-color: #EBEBEB;
       width: 50%; }
       #page.ttp .middle-section .contest-container .contest-body {
         color: #000000;
-        max-width: 350px;
+        max-width: 500px;
         margin: 0 auto;
         font-size: 20px;
         padding-top: 40px;
@@ -245,7 +245,7 @@
           padding-left: 10px; }
     #page.ttp .middle-section .class-container {
       background-color: #562282;
-      height: 850px;
+      height: 1200px;
       color: #fff;
       width: 50%; }
       #page.ttp .middle-section .class-container .class-title {
@@ -612,5 +612,7 @@
   #page.ttp .middle-section .course-container .course-text {
     width: initial;
     padding: 0 0 20px 0; } }
+
+    code { background-color: #ffffff; }
 
 /*# sourceMappingURL=ttp-lander.css.map */
