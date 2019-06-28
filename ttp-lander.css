@@ -616,7 +616,7 @@
     code { 
       background-color: #00FFFF; 
       color:black; 
-      width:20em;
+      width:80%;
       display: inline-block; 
        white-space: pre-wrap;       /* Since CSS 2.1 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
