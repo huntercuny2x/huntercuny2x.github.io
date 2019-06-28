@@ -15,10 +15,12 @@
 <meta property="og:site_name" content="Hunter CUNY 2x" />
 
 <link href="./font-awesome.css" type="text/css" rel="stylesheet" />
+
   <link href="./landing-footer.css" type="text/css" rel="stylesheet" />
-  <link href="./ttp-lander.css" type="text/css" rel="stylesheet" />
+  
   <link href="./hunter.css" type="text/css" rel="stylesheet" />
 <link rel='stylesheet' id='pronamic-pay-forms-css'  href='../wp-content/plugins/pronamic-ideal/css/forms.min.css@ver=3.7.0.css' type='text/css' media='all' />
+<link href="./ttp-lander.css" type="text/css" rel="stylesheet" />
 
 <meta http-equiv="Content-Security-Policy" content="img-src 'self' style-src 'self' 'unsafe-inline' default-src 'self' img-src 'self' font-src 'self' data: fonts.gstatic.com;">
 
@@ -77,7 +79,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <br />
           <br />
           <div class="contest-text">
-           <p>01.E Implementing Queue using Stacks</p>
+           <p>01. Implementing Queue using Stacks</p>
    
           <p>Difficulty Level: Easy</p>
 <p>Implement the following operations of a queue using stacks.</p>
@@ -89,7 +91,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>empty() -- Return whether the queue is empty.</p>
 <p>
 Example:</p>
-
+<pre>
 <code>
     MyQueue queue = new MyQueue();</br>
     queue.push(1);</br>
@@ -99,6 +101,7 @@ Example:</p>
     queue.pop();   // returns 1</br>
     queue.empty(); // returns false</br>
   </code>
+</pre>
     </br>
 
 
@@ -106,40 +109,39 @@ Example:</p>
 
 You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
 You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
-You may assume the queue stores integers.</p>
+You may assume the queue stores integers.
 </br>
 Submission:
 
 Submit a single file, your class should be implemented within its definition:</br>
 
-
-class MyQueue { public: /** Initialize your data structure here. */</br> MyQueue() {
-</br>
+<div class="codeblock">
+<pre>
 <code>
-}</br>
+class MyQueue { public: /** Initialize your data structure here. */
+MyQueue() {
+}
 
-/** Push element x to the back of queue. */</br>
-void push(int x) {</br>
+/** Push element x to the back of queue. */
+void push(int x) {
+}
 
-}</br>
+/** Removes the element from in front of queue and returns that element. */
+int pop() {
+}
 
-/** Removes the element from in front of queue and returns that element. */</br>
-int pop() {</br>
+/** Get the front element. */
+int peek() {
 
-}</br>
+}
 
-/** Get the front element. */</br>
-int peek() {</br>
-
-}</br>
-
-/** Returns whether the queue is empty. */</br>
-bool empty() {</br>
-</br>
-}</br>
-
+/** Returns whether the queue is empty. */
+bool empty() {
+}
+};
 </code>
-};</br>
+</pre>
+</div>
 
 </p>
         </div>
@@ -151,7 +153,7 @@ bool empty() {</br>
           <br />
           <br />
           
-          <p>02.E Valid Parentheses</p>
+          <p>02. Valid Parentheses</p>
             <p>Difficulty Level: Easy</p>
 
 <p>Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.</p>
@@ -206,109 +208,116 @@ Submission: Submit a single-file implementation of a class named Solution with p
           <br />
           <br />
           <div class="class-text">
-           <p>01.E Implementing Queue using Stacks</p>
+           <p>03. Bubble Sort</p>
    
           <p>Difficulty Level: Easy</p>
-<p>Implement the following operations of a queue using stacks.</p>
-
-<p>push(x) -- Push element x to the back of queue (you may assume x is an int).</p>
-<p>pop() -- Removes the element from in front of queue and returns it.</p>
-<p>peek() -- Get the front element without removing it from the queue.</p>
-<p>size() -- Return the number of elements in the queue.</p>
-<p>empty() -- Return whether the queue is empty.</p>
-<p>
-Example:</p>
-
-<code>
-    MyQueue queue = new MyQueue();</br>
-    queue.push(1);</br>
-    queue.push(2);</br>  
-    queue.size();  // returns 2</br>
-    queue.peek();  // returns 1</br>
-    queue.pop();   // returns 1</br>
-    queue.empty(); // returns false</br>
-  </code>
-    </br>
 
 
-<p>Notes:
+Check out https://www.hackerrank.com/topics/bubble-sort to learn more about bubble sort. The video tutorial is by Gayle Laakmann McDowell, author of the best-selling interview book Cracking the Coding Interview. Also on wikipedia: https://www.hackerrank.com/topics/bubble-sort
 
-You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
-You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
-You may assume the queue stores integers.</p>
-</br>
-Submission:
+Consider the following version of Bubble Sort:
 
-Submit a single file, your class should be implemented within its definition:</br>
+for (int i = 0; i < n; i++) {
 
+    for (int j = 0; j < n - 1; j++) {
+        // Swap adjacent elements if they are in decreasing order
+        if (a[j] > a[j + 1]) {
+            swap(a[j], a[j + 1]);
+        }
+    }
 
-class MyQueue { public: /** Initialize your data structure here. */</br> MyQueue() {
-</br>
-<code>
-}</br>
+}
+Given an array of integers, sort the array in ascending order using the Bubble Sort algorithm above. Once sorted, print the following three lines:
 
-/** Push element x to the back of queue. */</br>
-void push(int x) {</br>
+Array is sorted in numSwaps swaps., where numSwaps is the number of swaps that took place.
+First Element: firstElement, where firstElement is the first element in the sorted array.
+Last Element: lastElement, where lastElement is the last element in the sorted array.
+Hint: To complete this challenge, you must add a variable that keeps a running tally of all swaps that occur during execution.
 
-}</br>
+For example, given a worst-case but small array to sort: a = [6, 4, 1] we go through the following steps:
 
-/** Removes the element from in front of queue and returns that element. */</br>
-int pop() {</br>
+swap    a       
+0       [6,4,1]
+1       [4,6,1]
+2       [4,1,6]
+3       [1,4,6]
+It took 3 swaps to sort the array. Output would be
 
-}</br>
+Array is sorted in 3 swaps.  
+First Element: 1  
+Last Element: 6
+Submission: Submit a single-file implementation of a class named Solution with public member function: void countSwaps(std::vector) countSwaps should print the three required lines to standard output (std::cout), then return. You may have additional helper functions if you like, countSwaps is required.
 
-/** Get the front element. */</br>
-int peek() {</br>
+Output Format countSwaps must print the following three lines of output:
 
-}</br>
+Array is sorted in numSwaps swaps., where numSwaps is the number of swaps that took place.
+First Element: firstElement, where firstElement is the first element in the sorted array.
+Last Element: lastElement, where lastElement is the last element in the sorted array.
+Sample Input 0
 
-/** Returns whether the queue is empty. */</br>
-bool empty() {</br>
-</br>
-}</br>
+3
+1 2 3
+Sample Output 0
 
-</code>
-};</br>
+Array is sorted in 0 swaps.
+First Element: 1
+Last Element: 3
+Explanation 0
 
-</p>
+The array is already sorted, so 0 swaps take place and we print the necessary three lines of output shown above.
+
+Sample Input 1
+
+3
+3 2 1
+Sample Output 1
+
+Array is sorted in 3 swaps.
+First Element: 1
+Last Element: 3
+Explanation 1
+
+The array is not sorted, and its initial values are: {3, 2, 1} . The following 3 swaps take place:
+
+{3, 2, 1} -> {2, 3, 1}
+{2, 3, 1} -> {2, 1, 3}
+{2, 1, 3} -> {1, 2, 3}
+At this point the array is sorted and we print the necessary three lines of output shown above.
         </div>
       </div>
     </div>
       <div class="contest-container left">
        <div class="contest-body">
         <div class="contest-text">
-          <p>02.E Valid Parentheses</p>
-            Difficulty Level: Easy
+          <p>04. Course Schedule [NM]</p>
+            Difficulty Level: Medium
 
-Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+There are a total of n courses you have to take, labeled from 0 to n-1.
 
-An input string is valid if:
+Some courses may have prerequisites, for
 
-Open brackets must be closed by the same type of brackets.
-Open brackets must be closed in the correct order.
-Note that an empty string is also considered valid.
+example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1]
+
+Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses?
 
 Example 1:
 
-Input: "()"
+Input: 2, [[1,0]]
 Output: true
+Explanation: There are a total of 2 courses to take.
+            To take course 1 you should have finished course 0. So it is possible.
 Example 2:
 
-Input: "()[]{}"
-Output: true
-Example 3:
-
-Input: "(]"
+Input: 2, [[1,0],[0,1]]
 Output: false
-Example 4:
+Explanation: There are a total of 2 courses to take.
+            To take course 1 you should have finished course 0, and to take course 0 you should
+            also have finished course 1. So it is impossible.
+Note:
 
-Input: "([)]"
-Output: false
-Example 5:
-
-Input: "{[]}"
-Output: true
-Submission: Submit a single-file implementation of a class named Solution with public member function: bool isValid(std::string s) You may have additional helper functions if you like, isValid is required.
+The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.
+You may assume that there are no duplicate edges in the input prerequisites.
+Submission: Submit a single-file implementation of a class named Solution with public member function: bool canFinish(int numCourses, std::vector<std::pair<int, int>>& prerequisites) You may have additional helper functions if you like, canFinish is required.
            
           </a>
 
@@ -335,64 +344,57 @@ Submission: Submit a single-file implementation of a class named Solution with p
           <br />
           <br />
           <div class="contest-text">
-           <p>01.E Implementing Queue using Stacks</p>
+           <p>05. String to Integer (atoi)</p>
    
-          <p>Difficulty Level: Easy</p>
-<p>Implement the following operations of a queue using stacks.</p>
+          <p>Difficulty Level: Medium</p>
 
-<p>push(x) -- Push element x to the back of queue (you may assume x is an int).</p>
-<p>pop() -- Removes the element from in front of queue and returns it.</p>
-<p>peek() -- Get the front element without removing it from the queue.</p>
-<p>size() -- Return the number of elements in the queue.</p>
-<p>empty() -- Return whether the queue is empty.</p>
-<p>
-Example:</p>
+Difficulty Level: Medium
 
-<code>
-    MyQueue queue = new MyQueue();</br>
-    queue.push(1);</br>
-    queue.push(2);</br>  
-    queue.size();  // returns 2</br>
-    queue.peek();  // returns 1</br>
-    queue.pop();   // returns 1</br>
-    queue.empty(); // returns false</br>
-  </code>
-    </br>
+Implement atoi which converts a string to an integer.
 
+The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.
 
-<p>Notes:
+The string can contain additional characters after those that form the integral number, which are ignored and have no effect on the behavior of this function.
 
-You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
-You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
-You may assume the queue stores integers.</p>
-</br>
-Submission:
+If the first sequence of non-whitespace characters in str is not a valid integral number, or if no such sequence exists because either str is empty or it contains only whitespace characters, no conversion is performed.
 
-Submit a single file, your class should be implemented within its definition:</br>
+If no valid conversion could be performed, a zero value is returned.
 
+Note:
 
-class MyQueue { public: /** Initialize your data structure here. */</br> MyQueue() {
-</br>
-<code>
-}</br>
+Only the space character ' ' is considered as whitespace character.
+Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231, 231 − 1]. If the numerical value is out of the range of representable values, INT_MAX (231 − 1) or INT_MIN (−231) is returned.
+Submission: Submit a single-file implementation of a class named Solution with public member function: int myAtoi(std::string str) You may have additional helper functions if you like, myAtoi is required.
 
-/** Push element x to the back of queue. */</br>
-void push(int x) {</br>
+Example 1:
 
-}</br>
+Input: "42"
+Output: 42
+Example 2:
 
-/** Removes the element from in front of queue and returns that element. */</br>
-int pop() {</br>
+Input: "   -42"
+Output: -42
 
-}</br>
+Explanation: The first non-whitespace character is '-', which is the minus sign. Then take as many numerical digits as possible, which gets 42.
+Example 3:
 
-/** Get the front element. */</br>
-int peek() {</br>
+Input: "4193 with words"
+Output: 4193
 
-}</br>
+Explanation: Conversion stops at digit '3' as the next character is not a numerical digit.
+Example 4:
 
-/** Returns whether the queue is empty. */</br>
-bool empty() {</br>
+Input: "words and 987"
+Output: 0
+
+Explanation: The first non-whitespace character is 'w', which is not a numerical digit or a +/- sign. Therefore no valid conversion could be performed.
+Example 5:
+
+Input: "-91283472332"
+Output: -2147483648
+
+Explanation: The number "-91283472332" is out of the range of a 32-bit signed integer. Therefore INT_MIN (−231) is returned.
+
 </br>
 }</br>
 

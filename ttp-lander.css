@@ -187,7 +187,7 @@
     #page.ttp .middle-section .contest-container {
       /*height: 850px;*/
       background-color: #EBEBEB;
-      width: 50%; }
+      width:45%; }
       #page.ttp .middle-section .contest-container .contest-body {
         color: #000000;
         max-width: 500px;
@@ -464,7 +464,7 @@
     background-size: cover;
     height: 490px; }
   #page.ttp .middle-section .class-container {
-    width: initial;
+    width: 50%;
     height: auto;
     padding: 40px 32px; }
     #page.ttp .middle-section .class-container .class-title {
@@ -613,7 +613,17 @@
     width: initial;
     padding: 0 0 20px 0; } }
 
-    code { background-color: #00FFFF; color:black;}
-
+    code { 
+      background-color: #00FFFF; 
+      color:black; 
+      width:20em;
+      display: inline-block; 
+       white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    }
+pre {word-wrap: break-word;}
 
 /*# sourceMappingURL=ttp-lander.css.map */
