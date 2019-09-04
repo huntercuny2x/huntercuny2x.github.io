@@ -450,9 +450,9 @@ Example:
     <code>Given nums = [2, 7, 11, 15], target = 9,
 
     Because nums[0] + nums[1] = 2 + 7 = 9,
-    return [0, 1].</code>
+    return [0, 1].</code></br>
 <b>Submission</b>: Submit a single-file implementation of a class named Solution with public member function:
-<code>std::vector<int> twoSum(std::vector<int>& nums, int target)</code> which returns a vector containing the two indices. </br>You may have additional helper functions if you like, <b>twoSum is required</b>.
+<code>std::vector<int> twoSum(std::vector<int>& nums, int target)</code> </br>which returns a vector containing the two indices. </br>You may have additional helper functions if you like, <b>twoSum is required</b>.
         </div>
         <div class="clear"></div>
       </div>
@@ -484,7 +484,7 @@ Find the median of the two sorted arrays. The overall run time complexity should
 You may assume <b>nums1</b> and <b>nums2</b> cannot be both empty.</br>
 
 
-<b>Example 1:</b>
+<b>Example 1:</b></br>
 
 <code>
     nums1 = [1, 3]
@@ -492,19 +492,19 @@ You may assume <b>nums1</b> and <b>nums2</b> cannot be both empty.</br>
 
     The median is 2.0
 
-  </code>
-<b>Example 2:</b>
+  </code></br>
+<b>Example 2:</b></br>
 <code>
     nums1 = [1, 2]
     nums2 = [3, 4]
 
     The median is (2 + 3)/2 = 2.5
 
-  </code>
+  </code></br>
   </br>
   
 <b>Submission:</b> Submit a single-file implementation of a class named Solution with public member function:
-<code>double findMedianOfSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2)</code>
+<code>double findMedianOfSortedArrays(std::vector<int>& nums1, std::vector<int>& nums2)</code></br>
 
 You may have additional helper functions if you like, <b>findMedianOfSortedArrays is required.</b></p>
         </div>
@@ -520,18 +520,18 @@ You may have additional helper functions if you like, <b>findMedianOfSortedArray
 
 Sort a linked list in <b>O(n log n)</b> time using constant space complexity.
 </br>
-<b>Example 1:</b>
+<b>Example 1:</b></br>
 
 <code>
     Input: 4->2->1->3
     Output: 1->2->3->4
-    </code>
+    </code></br>
     </br>
-<b>Example 2:</b>
+<b>Example 2:</b></br>
 <code>
     Input: -1->5->3->4->0
     Output: -1->0->3->4->5
-    </code>
+    </code></br>
     </br>
 <b>Submission:</b>
 
@@ -543,7 +543,7 @@ Submit a single-file including the following struct:
         ListNode(int x) : val(x), next(nullptr) {}
     };
 and the implementation of a class named <b>Solution</b> with public member function:</br>
-<code>ListNode* sortList(ListNode* head)</code></br> which returns a pointer to the sorted list and takes a pointer to the first node as parameter.</br>
+<code>ListNode* sortList(ListNode* head)</code></br></br> which returns a pointer to the sorted list and takes a pointer to the first node as parameter.</br>
 
 You may have additional helper functions if you like, <b>sortList is required.</b>
            
@@ -595,7 +595,7 @@ Merge two sorted linked lists and return it as a new list. The new list should b
     Output: 1->1->2->3->4->4
   </code></br>
 <b>Submission:</b> Submit a single-file including the following struct:
-
+</br>
 <code>
       struct ListNode {
           int val;
@@ -604,7 +604,7 @@ Merge two sorted linked lists and return it as a new list. The new list should b
       };
     </code></br>
 and the implementation of a class named <code>Solution</code></br> with public member function:<code>
-ListNode* mergeTwoLists(ListNode* l1, ListNode* l2)</code> which returns a pointer to the merged list and takes pointers to the two lists as parameter.</br></br>
+ListNode* mergeTwoLists(ListNode* l1, ListNode* l2)</code></br> which returns a pointer to the merged list and takes pointers to the two lists as parameter.</br></br>
 
 You may have additional helper functions if you like, <b>mergeTwoLists is required.</b>
 
@@ -622,39 +622,31 @@ You may have additional helper functions if you like, <b>mergeTwoLists is requir
           <br />
           <br />
           
-          <p>02.E Valid Parentheses</p>
-            <p>Difficulty Level: Easy</p>
+          <p>10.M Add Two Numbers</p>
+            <p><b>Difficulty Level: Medium</b></p>
 
-<p>Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.</p>
+You are given two <b>non-empty</b> linked lists representing two non-negative integers. The digits are stored in <b>reverse order</b> and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
 
-An input string is valid if:
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
-Open brackets must be closed by the same type of brackets.
-</br>
-Open brackets must be closed in the correct order.</br>
-Note that an empty string is also considered valid.</br>
+<b>Example:</b>
+<code>
+    Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+    Output: 7 -> 0 -> 8
+    Explanation: 342 + 465 = 807.
+  </code></br>
+<b>Submission:</b> Submit a single-file including the following struct:
+<code>
+      struct ListNode {
+          int val;
+          ListNode *next;
+          ListNode(int x) : val(x), next(nullptr) {}
+      };
+    </code></br>
+and the implementation of a class named <code>Solution</code> with public member function:
+<code>ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)</code></br> which returns a pointer to the list representing the sum and takes pointers to the two number-lists as parameters
 
-<b>Example 1:</b></br>
-
-<code>Input: "()"</br>
-Output: true</code></br>
-<b>Example 2:</b></br>
-
-<code>Input: "()[]{}"</br>
-Output: true</code></br>
-<b>Example 3:</b></br>
-
-<code>Input: "(]"</br>
-Output: false</code></br>
-<b>Example 4:</b></br>
-
-<code>Input: "([)]"</br>
-Output: false</code></br>
-<b>Example 5:</b></br>
-
-<code>Input: "{[]}"</br>
-Output: true</code></br>
-Submission: Submit a single-file implementation of a class named Solution with public member function: <i>bool isValid(std::string s)</i> You may have additional helper functions if you like, <b>isValid is required.</b>
+You may have additional helper functions if you like, <b>addTwoNumbers is required.</b>
            
           </a>
 
