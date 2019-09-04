@@ -767,7 +767,7 @@ If the town judge exists, then:</br></br>
 
 1. The town judge trusts nobody.</br>
 2. Everybody (except for the town judge) trusts the town judge.</br>
-3. There is exactly one person that satisfies properties 1 and 2.</br>
+3. There is exactly one person that satisfies properties 1 and 2.</br></br>
 You are given trust, an array of pairs trust[i] = [a, b] representing that the person labelled a trusts the person labelled b.</br>
 
 If the town judge exists and can be identified, return the label of the town judge. Otherwise, return -1.</br></br>
@@ -815,53 +815,54 @@ You may have additional helper functions if you like, <b>findJudge is required</
       <div class="class-container left">
        
         <div class="class-text">
-          <p>02.E Valid Parentheses</p>
-            Difficulty Level: Easy
+          <p>14.M Rotate Image</p>
+            Difficulty Level: Medium
 
-Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+You are given an n x n 2D matrix representing an image.
 
-An input string is valid if:
+Rotate the image by 90 degrees (clockwise).
 
-Open brackets must be closed by the same type of brackets.
-Open brackets must be closed in the correct order.
-Note that an empty string is also considered valid.
+Note:
+
+You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
 
 Example 1:
 
-Input: "()"
-Output: true
+    Given input matrix =
+    [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+    ],
+
+    rotate the input matrix in-place such that it becomes:
+    [
+        [7,4,1],
+        [8,5,2],
+        [9,6,3]
+    ]
 Example 2:
 
-Input: "()[]{}"
-Output: true
-Example 3:
+    Given input matrix =
+    [
+        [ 5,  1,  9, 11],
+        [ 2,  4,  8, 10],
+        [13,  3,  6,  7],
+        [15, 14, 12, 16]
+    ],
 
-Input: "(]"
-Output: false
-Example 4:
+    rotate the input matrix in-place such that it becomes:
+    [
+        [15, 13,  2,  5],
+        [14,  3,  4,  1],
+        [12,  6,  8,  9],
+        [16,  7, 10, 11]
+    ]
+Submission: Submit a single-file including the implementation of a class named Solution with public member function:
+void rotate(std::vector<std::vector<int>>& matrix) postcondition: rotate outputs the rotated matrix to the standard output (cout) in the form:
+"[15,13,2,5]\n[14,3,4,1]\n[12,6,8,9]\n[16,7,10,11]"
 
-Input: "([)]"
-Output: false
-Example 5:
-
-Input: "{[]}"
-Output: true
-Submission: Submit a single-file implementation of a class named Solution with public member function: bool isValid(std::string s) You may have additional helper functions if you like, isValid is required.
-           
-          </a>
-
-          <a href="http://bit.ly/cuny2xcontactinfo" target="_blank">
-            
-         </a>
-
-         <a href="https://cunyhunter.co1.qualtrics.com/jfe/form/SV_bNlA08EDYSsn03z" target="_blank">
-            <div class="enroll-now">
-              Hunter student application
-            </div>
-         </a>
-        </div>
-        <div class="clear"></div>
-        blah blah
+You may have additional helper functions if you like, rotate is required.
       </div>
 </div>
 
@@ -881,59 +882,16 @@ Submission: Submit a single-file implementation of a class named Solution with p
           <br />
           <br />
           <div class="class-text">
-           <p>01.E Implementing Queue using Stacks
+           <p>15.E Implementing Queue using Stacks
           Difficulty Level: Easy
 
-Implement the following operations of a queue using stacks.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id placerat libero. In rhoncus pulvinar lorem ac pellentesque. Proin a sodales nisi, eget maximus augue. Maecenas nulla leo, iaculis a mi sit amet, mattis placerat orci. Maecenas id maximus turpis. Ut porttitor porta lectus, sed dapibus lectus scelerisque et. Cras dui justo, lacinia ac accumsan nec, interdum pulvinar lacus. Sed rhoncus, lorem sit amet feugiat lobortis, metus ante tristique nisi, eu tempus sem neque ut metus. Sed purus lectus, molestie sed posuere et, iaculis elementum neque. Ut a varius felis. Ut et mi sed sem congue pharetra vel non nisi. In hac habitasse platea dictumst. Fusce et urna sit amet nibh feugiat placerat in eu sem. Sed interdum nisi quis dapibus porttitor.
 
-push(x) -- Push element x to the back of queue (you may assume x is an int).
-pop() -- Removes the element from in front of queue and returns it.
-peek() -- Get the front element without removing it from the queue.
-size() -- Return the number of elements in the queue.
-empty() -- Return whether the queue is empty.
-Example:
+Nullam faucibus blandit gravida. Mauris facilisis sapien est, fermentum malesuada lectus porta ac. Duis vitae dui vitae lacus dignissim sollicitudin in eu ante. Nulla luctus auctor elit, at dapibus risus dapibus vitae. Nullam elementum gravida tellus sed tempor. In eros risus, volutpat eget quam ac, eleifend ullamcorper ante. Maecenas sed ex nibh. Curabitur vel mi eget ex efficitur convallis. Nulla sem orci, gravida ut odio at, congue efficitur velit. In pharetra volutpat augue eu lobortis.
 
-    MyQueue queue = new MyQueue();
+Nullam eget arcu sodales, fringilla nulla sit amet, sagittis ligula. Nam sed placerat nisl, ut feugiat nisl. Nullam a nisl vel nulla condimentum euismod ut eu sapien. Aliquam venenatis nibh nec tortor convallis tincidunt. Sed sed nisi velit. Ut condimentum, eros id aliquam faucibus, nisl velit euismod erat, at lobortis nisi nisl et nibh. Curabitur porttitor nunc eget rhoncus fringilla. Aliquam gravida elit sit amet sem euismod, id tincidunt lectus blandit. Integer venenatis, ante et luctus volutpat, massa ante auctor justo, quis finibus elit est vel dolor. Sed aliquet est a turpis tincidunt, vitae volutpat augue mollis. Sed molestie ipsum placerat mauris pharetra, id volutpat nibh blandit. Nam a nisi mi. Aliquam aliquet posuere iaculis.
 
-    queue.push(1);
-    queue.push(2);  
-    queue.size();  // returns 2
-    queue.peek();  // returns 1
-    queue.pop();   // returns 1
-    queue.empty(); // returns false
-Notes:
-
-You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
-You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
-You may assume the queue stores integers.
-Submission:
-
-Submit a single file, your class should be implemented within its definition:
-
-class MyQueue { public: /** Initialize your data structure here. */ MyQueue() {
-
-}
-
-/** Push element x to the back of queue. */
-void push(int x) {
-
-}
-
-/** Removes the element from in front of queue and returns that element. */
-int pop() {
-
-}
-
-/** Get the front element. */
-int peek() {
-
-}
-
-/** Returns whether the queue is empty. */
-bool empty() {
-
-}
-};</p>
+Pellentesque quis turpis sit amet augue fringilla sodales. In finibus ut mi a viverra. In eu fermentum eros. Curabitur ullamcorper in ex tincidunt tristique. Quisque quis quam vulputate, tincidunt est eu, vestibulum dui. Praesent eu tincidunt ligula. Mauris congue tristique est. Vestibulum interdum suscipit turpis suscipit varius. Aliquam ultricies est mauris, ac lobortis nibh rhoncus vel. In nec rutrum nunc. Aliquam blandit tortor gravida odio egestas, eu ultricies diam interdum. Aliquam pharetra leo sed nisi consectetur, a porta enim porttitor. Phasellus aliquet diam sit amet consequat semper. Sed dignissim, purus mollis convallis bibendum, enim quam feugiat ante, aliquam pulvinar mauris lectus id lacus.
         </div>
       </div>
     </div>
@@ -942,38 +900,16 @@ bool empty() {
         
           <div class="contest-body">
             <div class="contest-text">
-          <p>02.E Valid Parentheses</p>
+          <p>16.E Valid Parentheses</p>
             Difficulty Level: Easy
 
-Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id placerat libero. In rhoncus pulvinar lorem ac pellentesque. Proin a sodales nisi, eget maximus augue. Maecenas nulla leo, iaculis a mi sit amet, mattis placerat orci. Maecenas id maximus turpis. Ut porttitor porta lectus, sed dapibus lectus scelerisque et. Cras dui justo, lacinia ac accumsan nec, interdum pulvinar lacus. Sed rhoncus, lorem sit amet feugiat lobortis, metus ante tristique nisi, eu tempus sem neque ut metus. Sed purus lectus, molestie sed posuere et, iaculis elementum neque. Ut a varius felis. Ut et mi sed sem congue pharetra vel non nisi. In hac habitasse platea dictumst. Fusce et urna sit amet nibh feugiat placerat in eu sem. Sed interdum nisi quis dapibus porttitor.
 
-An input string is valid if:
+Nullam faucibus blandit gravida. Mauris facilisis sapien est, fermentum malesuada lectus porta ac. Duis vitae dui vitae lacus dignissim sollicitudin in eu ante. Nulla luctus auctor elit, at dapibus risus dapibus vitae. Nullam elementum gravida tellus sed tempor. In eros risus, volutpat eget quam ac, eleifend ullamcorper ante. Maecenas sed ex nibh. Curabitur vel mi eget ex efficitur convallis. Nulla sem orci, gravida ut odio at, congue efficitur velit. In pharetra volutpat augue eu lobortis.
 
-Open brackets must be closed by the same type of brackets.
-Open brackets must be closed in the correct order.
-Note that an empty string is also considered valid.
+Nullam eget arcu sodales, fringilla nulla sit amet, sagittis ligula. Nam sed placerat nisl, ut feugiat nisl. Nullam a nisl vel nulla condimentum euismod ut eu sapien. Aliquam venenatis nibh nec tortor convallis tincidunt. Sed sed nisi velit. Ut condimentum, eros id aliquam faucibus, nisl velit euismod erat, at lobortis nisi nisl et nibh. Curabitur porttitor nunc eget rhoncus fringilla. Aliquam gravida elit sit amet sem euismod, id tincidunt lectus blandit. Integer venenatis, ante et luctus volutpat, massa ante auctor justo, quis finibus elit est vel dolor. Sed aliquet est a turpis tincidunt, vitae volutpat augue mollis. Sed molestie ipsum placerat mauris pharetra, id volutpat nibh blandit. Nam a nisi mi. Aliquam aliquet posuere iaculis.
 
-Example 1:
-
-Input: "()"
-Output: true
-Example 2:
-
-Input: "()[]{}"
-Output: true
-Example 3:
-
-Input: "(]"
-Output: false
-Example 4:
-
-Input: "([)]"
-Output: false
-Example 5:
-
-Input: "{[]}"
-Output: true
-Submission: Submit a single-file implementation of a class named Solution with public member function: bool isValid(std::string s) You may have additional helper functions if you like, isValid is required.
+Pellentesque quis turpis sit amet augue fringilla sodales. In finibus ut mi a viverra. In eu fermentum eros. Curabitur ullamcorper in ex tincidunt tristique. Quisque quis quam vulputate, tincidunt est eu, vestibulum dui. Praesent eu tincidunt ligula. Mauris congue tristique est. Vestibulum interdum suscipit turpis suscipit varius. Aliquam ultricies est mauris, ac lobortis nibh rhoncus vel. In nec rutrum nunc. Aliquam blandit tortor gravida odio egestas, eu ultricies diam interdum. Aliquam pharetra leo sed nisi consectetur, a porta enim porttitor. Phasellus aliquet diam sit amet consequat semper. Sed dignissim, purus mollis convallis bibendum, enim quam feugiat ante, aliquam pulvinar mauris lectus id lacus.
            
           </a>
 
@@ -1012,71 +948,16 @@ Submission: Submit a single-file implementation of a class named Solution with p
           <br />
           <br />
           <div class="contest-text">
-           <p>01.E Implementing Queue using Stacks</p>
+           <p>17.E Implementing Queue using Stacks</p>
    
           <p>Difficulty Level: Easy</p>
-<p>Implement the following operations of a queue using stacks.</p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id placerat libero. In rhoncus pulvinar lorem ac pellentesque. Proin a sodales nisi, eget maximus augue. Maecenas nulla leo, iaculis a mi sit amet, mattis placerat orci. Maecenas id maximus turpis. Ut porttitor porta lectus, sed dapibus lectus scelerisque et. Cras dui justo, lacinia ac accumsan nec, interdum pulvinar lacus. Sed rhoncus, lorem sit amet feugiat lobortis, metus ante tristique nisi, eu tempus sem neque ut metus. Sed purus lectus, molestie sed posuere et, iaculis elementum neque. Ut a varius felis. Ut et mi sed sem congue pharetra vel non nisi. In hac habitasse platea dictumst. Fusce et urna sit amet nibh feugiat placerat in eu sem. Sed interdum nisi quis dapibus porttitor.
 
-<p>push(x) -- Push element x to the back of queue (you may assume x is an int).</p>
-<p>pop() -- Removes the element from in front of queue and returns it.</p>
-<p>peek() -- Get the front element without removing it from the queue.</p>
-<p>size() -- Return the number of elements in the queue.</p>
-<p>empty() -- Return whether the queue is empty.</p>
-<p>
-Example:</p>
+Nullam faucibus blandit gravida. Mauris facilisis sapien est, fermentum malesuada lectus porta ac. Duis vitae dui vitae lacus dignissim sollicitudin in eu ante. Nulla luctus auctor elit, at dapibus risus dapibus vitae. Nullam elementum gravida tellus sed tempor. In eros risus, volutpat eget quam ac, eleifend ullamcorper ante. Maecenas sed ex nibh. Curabitur vel mi eget ex efficitur convallis. Nulla sem orci, gravida ut odio at, congue efficitur velit. In pharetra volutpat augue eu lobortis.
 
-<code>
-    MyQueue queue = new MyQueue();</br>
-    queue.push(1);</br>
-    queue.push(2);</br>  
-    queue.size();  // returns 2</br>
-    queue.peek();  // returns 1</br>
-    queue.pop();   // returns 1</br>
-    queue.empty(); // returns false</br>
-  </code>
-    </br>
+Nullam eget arcu sodales, fringilla nulla sit amet, sagittis ligula. Nam sed placerat nisl, ut feugiat nisl. Nullam a nisl vel nulla condimentum euismod ut eu sapien. Aliquam venenatis nibh nec tortor convallis tincidunt. Sed sed nisi velit. Ut condimentum, eros id aliquam faucibus, nisl velit euismod erat, at lobortis nisi nisl et nibh. Curabitur porttitor nunc eget rhoncus fringilla. Aliquam gravida elit sit amet sem euismod, id tincidunt lectus blandit. Integer venenatis, ante et luctus volutpat, massa ante auctor justo, quis finibus elit est vel dolor. Sed aliquet est a turpis tincidunt, vitae volutpat augue mollis. Sed molestie ipsum placerat mauris pharetra, id volutpat nibh blandit. Nam a nisi mi. Aliquam aliquet posuere iaculis.
 
-
-<p>Notes:
-
-You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
-You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
-You may assume the queue stores integers.</p>
-</br>
-Submission:
-
-Submit a single file, your class should be implemented within its definition:</br>
-
-
-class MyQueue { public: /** Initialize your data structure here. */</br> MyQueue() {
-</br>
-<code>
-}</br>
-
-/** Push element x to the back of queue. */</br>
-void push(int x) {</br>
-
-}</br>
-
-/** Removes the element from in front of queue and returns that element. */</br>
-int pop() {</br>
-
-}</br>
-
-/** Get the front element. */</br>
-int peek() {</br>
-
-}</br>
-
-/** Returns whether the queue is empty. */</br>
-bool empty() {</br>
-</br>
-}</br>
-
-</code>
-};</br>
-
-</p>
+Pellentesque quis turpis sit amet augue fringilla sodales. In finibus ut mi a viverra. In eu fermentum eros. Curabitur ullamcorper in ex tincidunt tristique. Quisque quis quam vulputate, tincidunt est eu, vestibulum dui. Praesent eu tincidunt ligula. Mauris congue tristique est. Vestibulum interdum suscipit turpis suscipit varius. Aliquam ultricies est mauris, ac lobortis nibh rhoncus vel. In nec rutrum nunc. Aliquam blandit tortor gravida odio egestas, eu ultricies diam interdum. Aliquam pharetra leo sed nisi consectetur, a porta enim porttitor. Phasellus aliquet diam sit amet consequat semper. Sed dignissim, purus mollis convallis bibendum, enim quam feugiat ante, aliquam pulvinar mauris lectus id lacus.
         </div>
       </div>
     </div>
@@ -1086,39 +967,16 @@ bool empty() {</br>
           <br />
           <br />
           
-          <p>02.E Valid Parentheses</p>
+          <p>18.E Valid Parentheses</p>
             <p>Difficulty Level: Easy</p>
 
-<p>Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.</p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id placerat libero. In rhoncus pulvinar lorem ac pellentesque. Proin a sodales nisi, eget maximus augue. Maecenas nulla leo, iaculis a mi sit amet, mattis placerat orci. Maecenas id maximus turpis. Ut porttitor porta lectus, sed dapibus lectus scelerisque et. Cras dui justo, lacinia ac accumsan nec, interdum pulvinar lacus. Sed rhoncus, lorem sit amet feugiat lobortis, metus ante tristique nisi, eu tempus sem neque ut metus. Sed purus lectus, molestie sed posuere et, iaculis elementum neque. Ut a varius felis. Ut et mi sed sem congue pharetra vel non nisi. In hac habitasse platea dictumst. Fusce et urna sit amet nibh feugiat placerat in eu sem. Sed interdum nisi quis dapibus porttitor.
 
-An input string is valid if:
+Nullam faucibus blandit gravida. Mauris facilisis sapien est, fermentum malesuada lectus porta ac. Duis vitae dui vitae lacus dignissim sollicitudin in eu ante. Nulla luctus auctor elit, at dapibus risus dapibus vitae. Nullam elementum gravida tellus sed tempor. In eros risus, volutpat eget quam ac, eleifend ullamcorper ante. Maecenas sed ex nibh. Curabitur vel mi eget ex efficitur convallis. Nulla sem orci, gravida ut odio at, congue efficitur velit. In pharetra volutpat augue eu lobortis.
 
-Open brackets must be closed by the same type of brackets.
-</br>
-Open brackets must be closed in the correct order.</br>
-Note that an empty string is also considered valid.</br>
+Nullam eget arcu sodales, fringilla nulla sit amet, sagittis ligula. Nam sed placerat nisl, ut feugiat nisl. Nullam a nisl vel nulla condimentum euismod ut eu sapien. Aliquam venenatis nibh nec tortor convallis tincidunt. Sed sed nisi velit. Ut condimentum, eros id aliquam faucibus, nisl velit euismod erat, at lobortis nisi nisl et nibh. Curabitur porttitor nunc eget rhoncus fringilla. Aliquam gravida elit sit amet sem euismod, id tincidunt lectus blandit. Integer venenatis, ante et luctus volutpat, massa ante auctor justo, quis finibus elit est vel dolor. Sed aliquet est a turpis tincidunt, vitae volutpat augue mollis. Sed molestie ipsum placerat mauris pharetra, id volutpat nibh blandit. Nam a nisi mi. Aliquam aliquet posuere iaculis.
 
-<b>Example 1:</b></br>
-
-<code>Input: "()"</br>
-Output: true</code></br>
-<b>Example 2:</b></br>
-
-<code>Input: "()[]{}"</br>
-Output: true</code></br>
-<b>Example 3:</b></br>
-
-<code>Input: "(]"</br>
-Output: false</code></br>
-<b>Example 4:</b></br>
-
-<code>Input: "([)]"</br>
-Output: false</code></br>
-<b>Example 5:</b></br>
-
-<code>Input: "{[]}"</br>
-Output: true</code></br>
-Submission: Submit a single-file implementation of a class named Solution with public member function: <i>bool isValid(std::string s)</i> You may have additional helper functions if you like, <b>isValid is required.</b>
+Pellentesque quis turpis sit amet augue fringilla sodales. In finibus ut mi a viverra. In eu fermentum eros. Curabitur ullamcorper in ex tincidunt tristique. Quisque quis quam vulputate, tincidunt est eu, vestibulum dui. Praesent eu tincidunt ligula. Mauris congue tristique est. Vestibulum interdum suscipit turpis suscipit varius. Aliquam ultricies est mauris, ac lobortis nibh rhoncus vel. In nec rutrum nunc. Aliquam blandit tortor gravida odio egestas, eu ultricies diam interdum. Aliquam pharetra leo sed nisi consectetur, a porta enim porttitor. Phasellus aliquet diam sit amet consequat semper. Sed dignissim, purus mollis convallis bibendum, enim quam feugiat ante, aliquam pulvinar mauris lectus id lacus.
            
           </a>
 
@@ -1134,402 +992,7 @@ Submission: Submit a single-file implementation of a class named Solution with p
       </div>
 </div>
 
-<div class="middle-section left">
-      <div class="class-container left">
-        <div class="class-body">
-          <br />
-          <br />
-          <br />
-          <div class="class-text">
-           <p>01.E Implementing Queue using Stacks</p>
-   
-          <p>Difficulty Level: Easy</p>
-<p>Implement the following operations of a queue using stacks.</p>
 
-<p>push(x) -- Push element x to the back of queue (you may assume x is an int).</p>
-<p>pop() -- Removes the element from in front of queue and returns it.</p>
-<p>peek() -- Get the front element without removing it from the queue.</p>
-<p>size() -- Return the number of elements in the queue.</p>
-<p>empty() -- Return whether the queue is empty.</p>
-<p>
-Example:</p>
-
-<code>
-    MyQueue queue = new MyQueue();</br>
-    queue.push(1);</br>
-    queue.push(2);</br>  
-    queue.size();  // returns 2</br>
-    queue.peek();  // returns 1</br>
-    queue.pop();   // returns 1</br>
-    queue.empty(); // returns false</br>
-  </code>
-    </br>
-
-
-<p>Notes:
-
-You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
-You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
-You may assume the queue stores integers.</p>
-</br>
-Submission:
-
-Submit a single file, your class should be implemented within its definition:</br>
-
-
-class MyQueue { public: /** Initialize your data structure here. */</br> MyQueue() {
-</br>
-<code>
-}</br>
-
-/** Push element x to the back of queue. */</br>
-void push(int x) {</br>
-
-}</br>
-
-/** Removes the element from in front of queue and returns that element. */</br>
-int pop() {</br>
-
-}</br>
-
-/** Get the front element. */</br>
-int peek() {</br>
-
-}</br>
-
-/** Returns whether the queue is empty. */</br>
-bool empty() {</br>
-</br>
-}</br>
-
-</code>
-};</br>
-
-</p>
-        </div>
-      </div>
-    </div>
-      <div class="contest-container left">
-       <div class="contest-body">
-        <div class="contest-text">
-          <p>02.E Valid Parentheses</p>
-            Difficulty Level: Easy
-
-Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
-
-An input string is valid if:
-
-Open brackets must be closed by the same type of brackets.
-Open brackets must be closed in the correct order.
-Note that an empty string is also considered valid.
-
-Example 1:
-
-Input: "()"
-Output: true
-Example 2:
-
-Input: "()[]{}"
-Output: true
-Example 3:
-
-Input: "(]"
-Output: false
-Example 4:
-
-Input: "([)]"
-Output: false
-Example 5:
-
-Input: "{[]}"
-Output: true
-Submission: Submit a single-file implementation of a class named Solution with public member function: bool isValid(std::string s) You may have additional helper functions if you like, isValid is required.
-           
-          </a>
-
-          <a href="http://bit.ly/cuny2xcontactinfo" target="_blank">
-            
-         </a>
-
-         <a href="https://cunyhunter.co1.qualtrics.com/jfe/form/SV_bNlA08EDYSsn03z" target="_blank">
-            <div class="enroll-now">
-              
-            </div>
-         </a>
-        </div>
-        <div class="clear"></div>
-        
-      </div>
-    </div>
-</div>
-
-<div class="middle-section left">
-      <div class="contest-container left">
-        <div class="contest-body">
-          <br />
-          <br />
-          <br />
-          <div class="contest-text">
-           <p>01.E Implementing Queue using Stacks</p>
-   
-          <p>Difficulty Level: Easy</p>
-<p>Implement the following operations of a queue using stacks.</p>
-
-<p>push(x) -- Push element x to the back of queue (you may assume x is an int).</p>
-<p>pop() -- Removes the element from in front of queue and returns it.</p>
-<p>peek() -- Get the front element without removing it from the queue.</p>
-<p>size() -- Return the number of elements in the queue.</p>
-<p>empty() -- Return whether the queue is empty.</p>
-<p>
-Example:</p>
-
-<code>
-    MyQueue queue = new MyQueue();</br>
-    queue.push(1);</br>
-    queue.push(2);</br>  
-    queue.size();  // returns 2</br>
-    queue.peek();  // returns 1</br>
-    queue.pop();   // returns 1</br>
-    queue.empty(); // returns false</br>
-  </code>
-    </br>
-
-
-<p>Notes:
-
-You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
-You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
-You may assume the queue stores integers.</p>
-</br>
-Submission:
-
-Submit a single file, your class should be implemented within its definition:</br>
-
-
-class MyQueue { public: /** Initialize your data structure here. */</br> MyQueue() {
-</br>
-<code>
-}</br>
-
-/** Push element x to the back of queue. */</br>
-void push(int x) {</br>
-
-}</br>
-
-/** Removes the element from in front of queue and returns that element. */</br>
-int pop() {</br>
-
-}</br>
-
-/** Get the front element. */</br>
-int peek() {</br>
-
-}</br>
-
-/** Returns whether the queue is empty. */</br>
-bool empty() {</br>
-</br>
-}</br>
-
-</code>
-};</br>
-
-</p>
-        </div>
-      </div>
-    </div>
-      <div class="class-container left">
-       
-        <div class="class-text">
-          <p>02.E Valid Parentheses</p>
-            Difficulty Level: Easy
-
-Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
-
-An input string is valid if:
-
-Open brackets must be closed by the same type of brackets.
-Open brackets must be closed in the correct order.
-Note that an empty string is also considered valid.
-
-Example 1:
-
-Input: "()"
-Output: true
-Example 2:
-
-Input: "()[]{}"
-Output: true
-Example 3:
-
-Input: "(]"
-Output: false
-Example 4:
-
-Input: "([)]"
-Output: false
-Example 5:
-
-Input: "{[]}"
-Output: true
-Submission: Submit a single-file implementation of a class named Solution with public member function: bool isValid(std::string s) You may have additional helper functions if you like, isValid is required.
-           
-          </a>
-
-          <a href="http://bit.ly/cuny2xcontactinfo" target="_blank">
-            
-         </a>
-
-         <a href="https://cunyhunter.co1.qualtrics.com/jfe/form/SV_bNlA08EDYSsn03z" target="_blank">
-            <div class="enroll-now">
-              Hunter student application
-            </div>
-         </a>
-        </div>
-        <div class="clear"></div>
-        blah blah
-      </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<div class="middle-section left">
-      <div class="class-container left">
-        <div class="class-body">
-          <br />
-          <br />
-          <br />
-          <div class="class-text">
-           <p>01.E Implementing Queue using Stacks
-          Difficulty Level: Easy
-
-Implement the following operations of a queue using stacks.
-
-push(x) -- Push element x to the back of queue (you may assume x is an int).
-pop() -- Removes the element from in front of queue and returns it.
-peek() -- Get the front element without removing it from the queue.
-size() -- Return the number of elements in the queue.
-empty() -- Return whether the queue is empty.
-Example:
-
-    MyQueue queue = new MyQueue();
-
-    queue.push(1);
-    queue.push(2);  
-    queue.size();  // returns 2
-    queue.peek();  // returns 1
-    queue.pop();   // returns 1
-    queue.empty(); // returns false
-Notes:
-
-You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
-You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
-You may assume the queue stores integers.
-Submission:
-
-Submit a single file, your class should be implemented within its definition:
-
-class MyQueue { public: /** Initialize your data structure here. */ MyQueue() {
-
-}
-
-/** Push element x to the back of queue. */
-void push(int x) {
-
-}
-
-/** Removes the element from in front of queue and returns that element. */
-int pop() {
-
-}
-
-/** Get the front element. */
-int peek() {
-
-}
-
-/** Returns whether the queue is empty. */
-bool empty() {
-
-}
-};</p>
-        </div>
-      </div>
-    </div>
-      <div class="contest-container left">
-       
-        
-          <div class="contest-body">
-            <div class="contest-text">
-          <p>02.E Valid Parentheses</p>
-            Difficulty Level: Easy
-
-Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
-
-An input string is valid if:
-
-Open brackets must be closed by the same type of brackets.
-Open brackets must be closed in the correct order.
-Note that an empty string is also considered valid.
-
-Example 1:
-
-Input: "()"
-Output: true
-Example 2:
-
-Input: "()[]{}"
-Output: true
-Example 3:
-
-Input: "(]"
-Output: false
-Example 4:
-
-Input: "([)]"
-Output: false
-Example 5:
-
-Input: "{[]}"
-Output: true
-Submission: Submit a single-file implementation of a class named Solution with public member function: bool isValid(std::string s) You may have additional helper functions if you like, isValid is required.
-           
-          </a>
-
-          <a href="http://bit.ly/cuny2xcontactinfo" target="_blank">
-            
-         </a>
-
-      
-            <div class="enroll-now">
-              
-            </div>
-    
-        </div>
-        <div class="clear"></div>
-   
-      </div>
-
-
-      <div class="clear"></div>
-    
-  
-      <div class="clear">
-        
-
-      </div>
-    </div>
-    <div class="clear">
-      
-
-    </div>
 
 
     <div class="footer wrapper">
