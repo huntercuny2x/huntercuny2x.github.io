@@ -758,71 +758,57 @@ You may have additional helper functions if you like, <b>reversePairs is require
           <br />
           <br />
           <div class="contest-text">
-           <p>01.E Implementing Queue using Stacks</p>
+           <p>13.E Find the Town Judge</p>
    
-          <p>Difficulty Level: Easy</p>
-<p>Implement the following operations of a queue using stacks.</p>
+          <p><b>Difficulty Level: Easy</b></p>
+In a town, there are <i>N</i> people labelled from <i>1</i> to <i>N</i>. There is a rumor that one of these people is secretly the town judge.</br></br>
 
-<p>push(x) -- Push element x to the back of queue (you may assume x is an int).</p>
-<p>pop() -- Removes the element from in front of queue and returns it.</p>
-<p>peek() -- Get the front element without removing it from the queue.</p>
-<p>size() -- Return the number of elements in the queue.</p>
-<p>empty() -- Return whether the queue is empty.</p>
-<p>
-Example:</p>
+If the town judge exists, then:</br></br>
 
+1. The town judge trusts nobody.</br>
+2. Everybody (except for the town judge) trusts the town judge.</br>
+3. There is exactly one person that satisfies properties 1 and 2.</br>
+You are given trust, an array of pairs trust[i] = [a, b] representing that the person labelled a trusts the person labelled b.</br>
+
+If the town judge exists and can be identified, return the label of the town judge. Otherwise, return -1.</br></br>
+
+<b>Example 1:</b></br>
 <code>
-    MyQueue queue = new MyQueue();</br>
-    queue.push(1);</br>
-    queue.push(2);</br>  
-    queue.size();  // returns 2</br>
-    queue.peek();  // returns 1</br>
-    queue.pop();   // returns 1</br>
-    queue.empty(); // returns false</br>
-  </code>
-    </br>
-
-
-<p>Notes:
-
-You must use only standard operations of a stack -- which means only push to top, peek/pop from top, size, and is empty operations are valid.
-You may assume that all operations are valid (for example, no pop or peek operations will be called on an empty queue).
-You may assume the queue stores integers.</p>
-</br>
-Submission:
-
-Submit a single file, your class should be implemented within its definition:</br>
-
-
-class MyQueue { public: /** Initialize your data structure here. */</br> MyQueue() {
-</br>
+    Input: N = 2, trust = [[1,2]]
+    Output: 2
+    </code></br>
+<b>Example 2:</b></br>
 <code>
-}</br>
+    Input: N = 3, trust = [[1,3],[2,3]]
+    Output: 3
+    </code></br>
+<b>Example 3:</b></br>
+<code>
+    Input: N = 3, trust = [[1,3],[2,3],[3,1]]
+    Output: -1
+    </code></br>
+<b>Example 4:</b></br>
+<code>
+    Input: N = 3, trust = [[1,2],[2,3]]
+    Output: -1
+    </code></br>
+<b>Example 5:</b></br>
+<code>
+    Input: N = 4, trust = [[1,3],[1,4],[2,3],[2,4],[4,3]]
+    Output: 3
+    </code></br></br>
+<b>Note:</b></br>
 
-/** Push element x to the back of queue. */</br>
-void push(int x) {</br>
+1. 1 <= N <= 1000</br>
+2. trust.length <= 10000</br>
+3. trust[i] are all different</br>
+4. trust[i][0] != trust[i][1]</br>
+5. 1 <= trust[i][0], trust[i][1] <= N</br></br>
 
-}</br>
+<b>Submission:</b> Submit a single-file including the implementation of a class named Solution with public member function:</br></br>
+<code>int findJudge(int N, std::vector<std::vector<int>>& trust)</code></br></br>
 
-/** Removes the element from in front of queue and returns that element. */</br>
-int pop() {</br>
-
-}</br>
-
-/** Get the front element. */</br>
-int peek() {</br>
-
-}</br>
-
-/** Returns whether the queue is empty. */</br>
-bool empty() {</br>
-</br>
-}</br>
-
-</code>
-};</br>
-
-</p>
+You may have additional helper functions if you like, <b>findJudge is required</b>.
         </div>
       </div>
     </div>
