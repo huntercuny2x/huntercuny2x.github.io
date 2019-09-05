@@ -133,10 +133,20 @@ a {
 h1 {
   font-size: 70px;
   font-weight: 400;
-  line-height: 52px; }
+  line-height: 52px; 
+
+display: inline-block;
+}
   h1.marketing {
     font-size: 52px;
     font-weight: 300; }
+
+#challenge {
+  display: block;
+  bottom: 250px;
+  color:  red;
+  float:right;
+}
 
 h2 {
   font-size: 28px;
