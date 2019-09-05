@@ -1029,22 +1029,72 @@ You may have additional helper functions if you like, <b>exists() is required.</
           <br />
           <br />
           
-          <p>18.E Valid Parentheses</p>
-            <p>Difficulty Level: Easy</p>
+          <p>18.H Regular Expression Matching</p>
+            <b>Difficulty Level: Hard</b></br></br>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id placerat libero. In rhoncus pulvinar lorem ac pellentesque. Proin a sodales nisi, eget maximus augue. Maecenas nulla leo, iaculis a mi sit amet, mattis placerat orci. Maecenas id maximus turpis. Ut porttitor porta lectus, sed dapibus lectus scelerisque et. Cras dui justo, lacinia ac accumsan nec, interdum pulvinar lacus. Sed rhoncus, lorem sit amet feugiat lobortis, metus ante tristique nisi, eu tempus sem neque ut metus. Sed purus lectus, molestie sed posuere et, iaculis elementum neque. Ut a varius felis. Ut et mi sed sem congue pharetra vel non nisi. In hac habitasse platea dictumst. Fusce et urna sit amet nibh feugiat placerat in eu sem. Sed interdum nisi quis dapibus porttitor.
+Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.</br>
 
-Nullam faucibus blandit gravida. Mauris facilisis sapien est, fermentum malesuada lectus porta ac. Duis vitae dui vitae lacus dignissim sollicitudin in eu ante. Nulla luctus auctor elit, at dapibus risus dapibus vitae. Nullam elementum gravida tellus sed tempor. In eros risus, volutpat eget quam ac, eleifend ullamcorper ante. Maecenas sed ex nibh. Curabitur vel mi eget ex efficitur convallis. Nulla sem orci, gravida ut odio at, congue efficitur velit. In pharetra volutpat augue eu lobortis.
+<code>
+    '.' Matches any single character.
+    '*' Matches zero or more of the preceding element.
+  </code></br></br>
+The matching should cover the <b>entire</b> input string (not partial).</br></br>
 
-Nullam eget arcu sodales, fringilla nulla sit amet, sagittis ligula. Nam sed placerat nisl, ut feugiat nisl. Nullam a nisl vel nulla condimentum euismod ut eu sapien. Aliquam venenatis nibh nec tortor convallis tincidunt. Sed sed nisi velit. Ut condimentum, eros id aliquam faucibus, nisl velit euismod erat, at lobortis nisi nisl et nibh. Curabitur porttitor nunc eget rhoncus fringilla. Aliquam gravida elit sit amet sem euismod, id tincidunt lectus blandit. Integer venenatis, ante et luctus volutpat, massa ante auctor justo, quis finibus elit est vel dolor. Sed aliquet est a turpis tincidunt, vitae volutpat augue mollis. Sed molestie ipsum placerat mauris pharetra, id volutpat nibh blandit. Nam a nisi mi. Aliquam aliquet posuere iaculis.
+<b>Note:</b></br>
 
-Pellentesque quis turpis sit amet augue fringilla sodales. In finibus ut mi a viverra. In eu fermentum eros. Curabitur ullamcorper in ex tincidunt tristique. Quisque quis quam vulputate, tincidunt est eu, vestibulum dui. Praesent eu tincidunt ligula. Mauris congue tristique est. Vestibulum interdum suscipit turpis suscipit varius. Aliquam ultricies est mauris, ac lobortis nibh rhoncus vel. In nec rutrum nunc. Aliquam blandit tortor gravida odio egestas, eu ultricies diam interdum. Aliquam pharetra leo sed nisi consectetur, a porta enim porttitor. Phasellus aliquet diam sit amet consequat semper. Sed dignissim, purus mollis convallis bibendum, enim quam feugiat ante, aliquam pulvinar mauris lectus id lacus.
+•s could be empty and contains only lowercase letters a-z.
+•p could be empty and contains only lowercase letters a-z, and characters '.' or '*'.
+<b>Example 1:</b></br>
+<code>
+    Input:
+    s = "aa"
+    p = "a"
+    Output: false
+
+    Explanation: "a" does not match the entire string "aa".
+    </code></br></br>
+<b>Example 2:</b></br>
+<code>
+    Input:
+    s = "aa"
+    p = "a*"
+    Output: true
+
+    Explanation: '*' means zero or more of the preceding element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".
+    </code></br></br>
+<b>Example 3:</b></br>
+<code>
+    Input:
+    s = "ab"
+    p = ".*"
+    Output: true
+
+    Explanation: ".*" means "zero or more (*) of any character (.)".
+    </code></br></br>
+<b>Example 4:</b>
+<code>
+    Input:
+    s = "aab"
+    p = "c*a*b"
+    Output: true
+
+    Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore it matches "aab".
+  </code></br></br>
+<b>Example 5:</b>
+<code>
+    Input:
+    s = "mississippi"
+    p = "mis*is*p*."
+    Output: false
+</code></br></br>
+<b>Submission:</b> Submit a single-file including the implementation of a class named Solution with public member function:
+<code>bool isMatch(std::string s, std::string p)</code></br></br>
+
+You may have additional helper functions if you like, <b>isMatch() is required.</b>
            
           </a>
 
-          <a href="http://bit.ly/cuny2xcontactinfo" target="_blank">
-            
-         </a>
+        
 
         
         
