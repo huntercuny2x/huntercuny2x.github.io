@@ -994,16 +994,32 @@ You may have additional helper functions if you like, <b>subsets() is required.<
           <br />
           <br />
           <div class="contest-text">
-           <p>17.E Implementing Queue using Stacks</p>
+           <p>17.M Word Search</p>
    
-          <p>Difficulty Level: Easy</p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id placerat libero. In rhoncus pulvinar lorem ac pellentesque. Proin a sodales nisi, eget maximus augue. Maecenas nulla leo, iaculis a mi sit amet, mattis placerat orci. Maecenas id maximus turpis. Ut porttitor porta lectus, sed dapibus lectus scelerisque et. Cras dui justo, lacinia ac accumsan nec, interdum pulvinar lacus. Sed rhoncus, lorem sit amet feugiat lobortis, metus ante tristique nisi, eu tempus sem neque ut metus. Sed purus lectus, molestie sed posuere et, iaculis elementum neque. Ut a varius felis. Ut et mi sed sem congue pharetra vel non nisi. In hac habitasse platea dictumst. Fusce et urna sit amet nibh feugiat placerat in eu sem. Sed interdum nisi quis dapibus porttitor.
+          <b>Difficulty Level: Medium</b></br></br>
 
-Nullam faucibus blandit gravida. Mauris facilisis sapien est, fermentum malesuada lectus porta ac. Duis vitae dui vitae lacus dignissim sollicitudin in eu ante. Nulla luctus auctor elit, at dapibus risus dapibus vitae. Nullam elementum gravida tellus sed tempor. In eros risus, volutpat eget quam ac, eleifend ullamcorper ante. Maecenas sed ex nibh. Curabitur vel mi eget ex efficitur convallis. Nulla sem orci, gravida ut odio at, congue efficitur velit. In pharetra volutpat augue eu lobortis.
+Given a 2D board and a word, find if the word exists in the grid.</br></br>
 
-Nullam eget arcu sodales, fringilla nulla sit amet, sagittis ligula. Nam sed placerat nisl, ut feugiat nisl. Nullam a nisl vel nulla condimentum euismod ut eu sapien. Aliquam venenatis nibh nec tortor convallis tincidunt. Sed sed nisi velit. Ut condimentum, eros id aliquam faucibus, nisl velit euismod erat, at lobortis nisi nisl et nibh. Curabitur porttitor nunc eget rhoncus fringilla. Aliquam gravida elit sit amet sem euismod, id tincidunt lectus blandit. Integer venenatis, ante et luctus volutpat, massa ante auctor justo, quis finibus elit est vel dolor. Sed aliquet est a turpis tincidunt, vitae volutpat augue mollis. Sed molestie ipsum placerat mauris pharetra, id volutpat nibh blandit. Nam a nisi mi. Aliquam aliquet posuere iaculis.
+The word can be constructed from letters of sequentially adjacent cells, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.</br></br>
 
-Pellentesque quis turpis sit amet augue fringilla sodales. In finibus ut mi a viverra. In eu fermentum eros. Curabitur ullamcorper in ex tincidunt tristique. Quisque quis quam vulputate, tincidunt est eu, vestibulum dui. Praesent eu tincidunt ligula. Mauris congue tristique est. Vestibulum interdum suscipit turpis suscipit varius. Aliquam ultricies est mauris, ac lobortis nibh rhoncus vel. In nec rutrum nunc. Aliquam blandit tortor gravida odio egestas, eu ultricies diam interdum. Aliquam pharetra leo sed nisi consectetur, a porta enim porttitor. Phasellus aliquet diam sit amet consequat semper. Sed dignissim, purus mollis convallis bibendum, enim quam feugiat ante, aliquam pulvinar mauris lectus id lacus.
+<b>Example:</b>
+<code>
+    board =
+    [
+        ['A','B','C','E'],
+        ['S','F','C','S'],
+        ['A','D','E','E']
+    ]
+</br>
+* Given word = **"ABCCED"**, return **true**.
+* Given word = "**SEE**", return **true**.
+* Given word = "**ABCB**", return **false**.
+
+</code></br></br>
+<b>Submission:</b> Submit a single-file including the implementation of a class named Solution with public member function:
+<code>bool exists(std::vector< std::vector< char>>& board, std::string word)</code></br></br>
+
+You may have additional helper functions if you like, <b>exists() is required.</b>
         </div>
       </div>
     </div>
